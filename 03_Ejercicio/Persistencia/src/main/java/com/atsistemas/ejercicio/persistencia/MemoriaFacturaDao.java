@@ -2,8 +2,11 @@ package com.atsistemas.ejercicio.persistencia;
 
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.atsistemas.ejercicio.entidades.Factura;
 
+@Repository
 public class MemoriaFacturaDao implements FacturaDao {
 
 	private Map<Integer, Factura> tablaFacturas;

@@ -18,16 +18,18 @@
 			<artifactId>Servicio</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>com.atsistemas</groupId>
-			<artifactId>Negocio</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		<dependency> <groupId>com.atsistemas</groupId> <artifactId>Negocio</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> </dependency>
 		<dependency>
 			<groupId>com.atsistemas</groupId>
 			<artifactId>Persistencia</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!-- dependency>
+			<groupId>com.atsistemas</groupId>
+			<artifactId>PersistenciaJDBC</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>

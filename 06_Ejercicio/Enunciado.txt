@@ -1,0 +1,11 @@
+Definir una aplicacion, compuesta por 2 capas
+	-Servicio
+	-Persistencia
+	
+Donde se implemente un CRUD, disgregado por tareas de 
+actualizacion y consulta, basado en el usuario que se 
+conecta a la BBDD.
+
+Se empleara por seguridad DastaSource.
+
+La entidad del CRUD es Persona (nombre, apellido y edad)

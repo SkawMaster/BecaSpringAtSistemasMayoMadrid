@@ -12,6 +12,7 @@
   	<module>Negocio</module>
   	<module>Presentacion</module>
   	<module>Aplicacion</module>
+  	<module>PersistenciaJDBC</module>
   </modules>
   <build>
 		<plugins>

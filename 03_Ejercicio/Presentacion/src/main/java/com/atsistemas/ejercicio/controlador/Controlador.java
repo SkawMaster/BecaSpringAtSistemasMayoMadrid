@@ -1,13 +1,20 @@
 package com.atsistemas.ejercicio.controlador;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+
 import com.atsistemas.ejercicio.entidades.Factura;
 import com.atsistemas.ejercicio.servicio.Servicio;
 import com.atsistemas.ejercicio.vista.Vista;
 import com.atsistemas.ejercicio.vista.VistaError;
 import com.atsistemas.ejercicio.vista.VistaOk;
 
+@Controller("controlador")
 public class Controlador {
 	
+	@Autowired
+	@Qualifier("servicio")
 	private Servicio servicio;
 	
 	public Controlador(Servicio servicio) {
