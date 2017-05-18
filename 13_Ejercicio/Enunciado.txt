@@ -11,10 +11,11 @@ Buscar Amistades -> genero indistinto, hasta 20 cm menos altura, hasta 10 años d
 Buscar Ideal -> genero distinto, hasta 5 cm diferencia, 5 años 
 
 Usuario
-	-nombre
-	-login
-	-password
-	-mail
+	-nombre: Victor
+	-apellido: Herrero
+	-login: vherrero
+	-password: pepe
+	-mail: vherrero@pronoide.es
 	-altura
 	-edad > 18
 	-genero

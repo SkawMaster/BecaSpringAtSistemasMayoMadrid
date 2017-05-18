@@ -4,7 +4,7 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
-import org.apache.commons.dbcp2.BasicDataSource;
+import org.apache.commons.dbcp.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,10 +20,10 @@ import com.atsistemas.persistencia.HibernatePersonaDao;
 public class ConfiguracionHibernate {
 
 	@Bean
-	public HibernateTransactionManager transactionManager(SessionFactory sessionFactory){
+	public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
 		return new HibernateTransactionManager(sessionFactory);
 	}
-	
+
 	@Bean
 	public DataSource dataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
@@ -52,10 +52,10 @@ public class ConfiguracionHibernate {
 
 		return localSessionFactoryBean;
 	}
-	
+
 	@Bean
 	@Autowired
-	public HibernatePersonaDao hibernatePersonaDao(SessionFactory sessionFactory){
+	public HibernatePersonaDao hibernatePersonaDao(SessionFactory sessionFactory) {
 		return new HibernatePersonaDao(sessionFactory);
 	}
 
